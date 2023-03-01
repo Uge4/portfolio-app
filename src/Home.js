@@ -6,11 +6,7 @@ import Develop from "./Develop"
 function Home() {
     return (
       <div className="home">
-
-        <Discover />
-        <Design />
-        <Develop />
-        
+        <h1>Hi, my name's Eugene, <small>I'm a Product Manager/Marketer/Analyst/Designer/Developer/Innovator with many passions, some of which you might stumbled across here.</small></h1>        
       </div>
     );
   }

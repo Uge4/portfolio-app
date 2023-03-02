@@ -20,26 +20,22 @@ function App() {
       <NavBar />
 
       <Switch >
-
-        <Router >
     
-          <Route path="/discover" component={Discover}>
+          <Route path="/discover">
             <Discover />
           </Route>
         
-          <Route path="/design" component={Design}>
+          <Route path="/design">
             <Design />
           </Route>
         
-          <Route path="/develop" component={Develop}>
+          <Route path="/develop">
             <Develop />
           </Route>
           
-          <Route exact path="/" element={Home}>
+          <Route exact path="/">
             <Home />
           </Route>
-          
-        </Router>
 
       </Switch>
 

@@ -7,10 +7,10 @@ function NavBar() {
   
     <nav class="navBar" as="ül">
 
-      <li><Link className="" to="/" exact >Home</Link></li>
-      <li><Link className="" to="/discover" exact >Discover</Link></li>
-      <li><Link className="" to="/design" exact >Design</Link></li>   
-      <li><Link className="" to="/develop" exact >Develop</Link></li>
+      <li><NavLink className="" to="/" exact >Home</NavLink></li>
+      <li><NavLink className="" to="/discover" exact >Discover</NavLink></li>
+      <li><NavLink className="" to="/design" exact >Design</NavLink></li>   
+      <li><NavLink className="" to="/develop" exact >Develop</NavLink></li>
     
     </nav>
   )

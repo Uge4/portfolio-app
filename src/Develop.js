@@ -1,9 +1,10 @@
 import React from 'react'
+import StockAnalysis from "./StockAnalysis"
 
 function Develop() {
     return (
       <div className="develop">
-        <p>Develop</p>
+        <StockAnalysis />
       </div>
     );
   }

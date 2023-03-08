@@ -1,0 +1,58 @@
+{
+  "opportunity": [
+    { 
+      "id": 1, 
+      "exchange": "ASX",
+      "ticker": "ATP", 
+      "stock": "Atlas Pearls Ltd", 
+      "title": "ATP - fortune favours the brave", 
+      "long-chart": "http://localhost:4000/images/ATP_2023-03-02_06-14-28-long.png",
+      "short-chart": "http://localhost:4000/images/ATP_2023-03-02_22-49-52-short.png",
+      "tags": [ "falling wedge", "double bottom", "revenue growth" ],
+      "body": {
+        "positives": "ATP in a strong uptrend previously, good fundamentals as potentially undervalued given debt and revemue growth, and earlier pearl production issues no longer impacting forecasts.",
+        "negatives": "natural disasters issues a potential risk to production, potential weak demand during global recession.",
+        "technicals": "Falling wedge potentially bouncing off double bottom, also bouncing off 20d SMA on 6 month price low.",
+        "tips":"What for next. A breakout of the wedge, potential fakeout before hand so maybe able to buy lower, look for confirmation via."
+        },
+      "link": "https://www.tradingview.com/chart/?symbol=ASX%3AATP" 
+      },
+  
+      { 
+        "id": 2, 
+        "exchange": "ASX",
+        "ticker": "BRN", 
+        "stock": "Brainchip Inc", 
+        "title": "BRN - series of unfortunate events but...", 
+        "long-chart": "",
+        "short-chart": "",
+        "tags": [ "falling wedge", "double bottom", "revenue growth" ],
+        "body": {
+          "positives": "3 years of runway, potential imminent revenue(overdue), US Chips Act, start of 4th industrial revolution.",
+          "negatives": "Market sentiment low due to delayed revenue, lack of transparency and communication, slow than expected OEM take-up.",
+          "technicals": "Long term positive trend however market cap stuck at circa $1b (at risk). RSI indicating not oversold yet and MACD nearing zero-line on monthly and under on weekly since Aug 22.",
+          "tips":"Weekly stoch-RSI-Money Flow charts all indicating nearly oversold so potential reversal or buying opportunity."
+          },
+        "link": "https://www.tradingview.com/chart/?symbol=ASX%3ABRN" 
+      },
+      
+      { 
+        "id": 3, 
+        "exchange": "ASX",
+        "ticker": "APE", 
+        "stock": "Eagers Automotive Limited", 
+        "title": "APE - a big Gorilla in the mist...", 
+        "long-chart": "",
+        "short-chart": "",
+        "tags": [ "falling wedge", "double bottom", "revenue growth" ],
+        "body": {
+          "positives": "Property portfolio strategy, automation, strong forecast revenues, positioned for EV, consistent dividends, low risk",
+          "negatives": "No explosive growth catalysts, share price near to historic highs.",
+          "technicals": "Moving averages improving expanding over long term, RSI has room to move up.",
+          "tips":"Watch recession and global chip and battery shortages and any drivers for recent surge in price and volume."
+          },
+        "link": "" 
+      }
+
+  ]
+}

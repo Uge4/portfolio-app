@@ -1,14 +1,23 @@
-import React from 'react'
-import Discover from "./Discover"
-import Design from "./Design"
-import Develop from "./Develop"
+import React, {useState} from 'react'
 
 function Home() {
-    return (
-      <div className="home">
-        <h1>Hi, my name's Eugene, <small>I'm a Product Manager/Marketer/Analyst/Designer/Developer/Innovator with many passions, some of which you might stumbled across here.</small></h1>        
-      </div>
-    );
+  const [role, setRole] = useState("Product Manager")
+  const roles =["Product Manager", "Marketer", "Digital Guy", "Analyst", "Designer", "Developer", "Innovator", "Creator"] 
+  // let text = ""
+  
+  function handleClick(e){
+    roles.map(text => 
+      setTimeout(console.log("inside loop " + text), setRole(text)),
+      10000)
   }
 
-export default Home;
+  return (
+    <div className="home">
+      <h3>Hi, my name's Eugene, I'm a {role} with many passions, some of which you might stumbled across here.</h3>        
+      <button onClick={handleClick}>click me</button>
+    </div>
+  );
+
+  }
+
+  export default Home;

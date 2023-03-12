@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link, } from "react-router-dom";
+
 
 function Footer() {
     return (
       <div className="footer">
-        <h3>Footer H1</h3>
+        
+        <Link id="footerLink" to="/contact" >Contact</Link>
+        <a id="footerLink" href="" >Resume</a>
+        <a id="footerLink" href="www.linkedin.com/in/eugeneholenstein" >LinkedIn</a>
+        <a id="footerLink" href="https://github.com/Uge4" >Github</a>
+
       </div>
     );
   }

@@ -1,19 +1,23 @@
 import React from "react";
-import { NavLink, } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 
 function NavBar() {
   
   return (
-   
-      <nav class="navBar">
 
-        <NavLink className="navOption"  to="/" exact >Home</NavLink>
-        <NavLink className="navOption" to="/discover"  >Discover</NavLink>
-        <NavLink className="navOption" to="/design"  >Design</NavLink>
-        <NavLink className="navOption" to="/develop"  >Develop</NavLink>
-      
-      </nav>
+    <div id="navDiv">
+      <Link className="homeIcon" to="/">
+        <img src="./images/homeIcon.png" alt="home" />
+      </Link>
+      <nav class="navBar">
+          <NavLink className="navOption" to="/discover"  >Discover</NavLink>
+          <NavLink className="navOption" to="/design"  >Design</NavLink>
+          <NavLink className="navOption" to="/develop"  >Develop</NavLink>
+          
+        
+        </nav>
+      </div>
   )
 }
 

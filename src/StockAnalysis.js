@@ -5,6 +5,8 @@ import axios from 'axios';
 function StockAnalysis() {
     const [opportunities, setOpportunities] = useState([])
     const [openPrice, setRegOpenPrice] = useState("")
+    const [priceChangePercentage, setRegMarChangePerc] = useState("")
+    const [marketCap, setMarketCap] = useState("")
 
     
     // fetch stock analysis content from json server 
@@ -29,27 +31,29 @@ function StockAnalysis() {
         };
         
         axios.request(options).then(function (response) {
-                console.log(response.data.price.regularMarketOpen.fmt)
             setRegOpenPrice(response.data.price.regularMarketOpen.fmt)
+            setRegMarChangePerc(response.data.price.regularMarketChangePercent.fmt)
+            setMarketCap(response.data.price.marketCap.fmt)
         }).catch(function (error) {
             console.error("Opps, something went wrong!" + error);
         });
 
     },[])    
 
-    console.log("this is the: " + {openPrice});
-
     return (
-    <div className="blogContainer">
+
+    <div className="stockAnalysis">
         
-        <div className="stockAnalysis">
-            {opportunities.map(point => <Stock key={point.body.id} point={point} openPrice={openPrice}/>)}
-        </div>
-        <div className="blogContainer">
-            <h2>Stock Data</h2>
-            <p></p>
-        </div>
+        <h1>Not Financial Advice</h1>
+        {opportunities.map(point => 
+        <Stock 
+            key={point.body.id} 
+            point={point} 
+            openPrice={openPrice} 
+            priceChangePercentage={priceChangePercentage}
+            marketCap={marketCap}/>)}
     </div>
+
     );
   }
 

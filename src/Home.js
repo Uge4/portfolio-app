@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 
 function Home() {
   const [role, setRole] = useState("Product Manager")
@@ -13,8 +13,12 @@ function Home() {
 
   return (
     <div className="home">
-      <h3>Hi, my name's Eugene, I'm a {role} with many passions, some of which you might stumbled across here.</h3>        
-      <button onClick={handleClick}>click me</button>
+      <div id="hero">
+        <h1>Hi, my name's Eugene, I'm a {role}.</h1>
+        <h6>I like to build products that people like using. You'll stumble across some of the projects I've been involved with here, along with some stuff I've knocked up.</h6>        
+        
+      </div>
+      <button className="showButton" onClick={handleClick} >OK, let's go &#x2192;</button>
     </div>
   );
 

@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Eugene Holenstein",
+      "email": "eugeneholenstein@gmail.com",
+      "message": "This is a test as you're already working for me!"
+    },
+    {
+      "name": "Tom HOlenstein",
+      "email": "tomholenstein@gmail.com",
+      "message": "Hey Dad, I want to ask you something",
+      "id": 2
+    },
+    {
+      "name": "Tom HOlenstein",
+      "email": "tomholenstein@gmail.com",
+      "message": "Hey Dad, I want to ask you something",
+      "id": 3
+    },
+    {
+      "name": "Tom HOlenstein",
+      "email": "tomholenstein@gmail.com",
+      "message": "Hey Dad, I want to ask you something",
+      "id": 4
+    }
+  ]
+}
